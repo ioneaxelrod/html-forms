@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<header>
+<title>"UberMelon Order Form"</title>
+</header>
+
+<body>
+	<h1> Order! </h1>
+	<h3> Prices </h3>
+	<table>
+		<tr>
+			<th> Melon Name </th>
+			<th> Price Per Lb </th>
+		</tr>
+		<tr>
+			<td> Watermelon </td>
+			<td> $1.59 </td>
+		</tr>
+		<tr>
+			<td> Honeydew </td>
+			<td> $0.99 </td>
+		</tr>
+		<tr>
+			<td> Cantaloupe </td>
+			<td> $1.29 </td>
+		</tr>
+		<tr>
+			<td> Crenshaw </td>
+			<td> $2.19 </td>
+		</tr>
+		<tr>
+			<td> Canary </td>
+			<td> $11.99 </td>
+		</tr>
+	</table>
+
+	<p>Place your orders here! You know you want to... ;)</p>
+
+	<form>
+		<p>First Name: <input type="text" name="firstname"></p>
+		<p>Last Name: <input type="text" name="lastname"></p>
+		<p>Melon Type: 
+			<select name="melontype">
+				<option value="watermelon">Watermelon</option>
+				<option value="honeydew">Honeydew</option>
+				<option value="cantaloupe">Cantaloupe</option>
+				<option value="crenshaw">Crenshaw</option>
+				<option value="canary">Canary</option>
+			</select></p>
+		<p>Quantity: <input type="text" name="quantity"></p>
+		<p>Delivery Time: 
+			<input type="radio" name="time" value="am">AM
+			<input type="radio" name="time" value="pm">PM
+			<input type="radio" name="time" value="wat">WAT
+		</p>
+		<p>Returning Customer:
+			<input type="radio" name="returning" value="yes">Yes
+			<input type="radio" name="returning" value="no">No
+		</p>
+		<p>Checkbox:
+			<input type="checkbox" name="stats" value="dog">Dog
+			<input type="checkbox" name="stats" value="cat">Cat
+			<input type="checkbox" name="stats" value="hedgehog">Hedgehog
+			<input type="checkbox" name="stats" value="balloonicorn">Balloonicorn
+			<input type="checkbox" name="stats" value="yak">Yak
+		</p>
+		<p><input type="submit" name="button">
+
+		<form action="https://ubermelon-order-form.herokuapp.com/process" method="POST">
+
+
+
+	</form>
+
+
+</body>
+<footer>
+	<p>*Quantities given are by the flat</p>
+</footer>
+
+
+
+
+
+
+
+
+</html>
